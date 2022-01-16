@@ -2,7 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+tutorialcadastro/asgi..copy.py
+tutorialcadastro/settings.copy.py
+tutorialcadastro/urls.copy.py
 # C extensions
 *.so
 
