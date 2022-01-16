@@ -22,4 +22,5 @@ urlpatterns = [
     # user management
     path('accounts/', include("allauth.urls")), # adicionado ao código
     # local
+    path("", include("pages.urls", namespace="pages")),
 ]
