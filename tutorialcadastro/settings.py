@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'allauth', # add a/c
     'allauth.account', # add a/c
     'allauth.socialaccount', # add a/c
+    # local apps
+    'pages.apps.PagesConfig', # add a/c
 ]
 
 MIDDLEWARE = [
@@ -60,7 +62,7 @@ ROOT_URLCONF = 'tutorialcadastro.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -136,3 +138,4 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
+LOGIN_REDIRECT_URL = "/" # Add a/c Local para redirecionar após login
